@@ -1,20 +1,21 @@
-l_english:
-  tt_tech_biogenesis: "Biogenesis"
-  tt_tech_biogenesis_desc: "Our mastery over complex ecosystems has advanced to a point, where we could consider transforming even the most hostile planets into habitable worlds. Further research will be necessary on a case by case basis, with each project requiring its own set of specialized procedures, novel materials and custom solutions."
-  TECH_UNLOCK_TERRAFORMING_BIOGENESIS_TITLE: "§HUnlocks Decision:§! Fund Biogenesis Research"
-  TECH_UNLOCK_TERRAFORMING_BIOGENESIS_DESC: "§HBiogenesis§!\nAllows us to terraform lifeless worlds."
-  
-  tt_decision_terraform: "Fund Biogenesis Research"
-  tt_decision_terraform_desc: "A research project is funded to determine the best approach to terraforming this planet into a world capable of hosting life."
-  tt_decision_terraform_effects_short: "Unlocks a §YSpecial Project§! that will add a §YTerraforming Candidate§! modifier to the planet"
-  TT_REQUIRES_NO_DYSON_SPHERE: "$TRIGGER_FAIL$Cannot be used in a system with a Dyson Sphere."
-  
-  tt_terraforming_project: "Biogenesis Project"
-  tt_terraforming_project_desc: "This lifeless world is currently being investigated as a potential terraforming candidate."
-  
-  TT_TERRAFORM_SOC: "Biogenesis"
-  TT_TERRAFORM_SOC_DESC: "While seeding life on a barren world always poses a considerable challenge, [From.GetName] seems especially unfit for biogenesis, making permanent habitation a quixotic pipe dream. The biologists we hired are already brainstorming ideas how to make it work anyway, eager to prove the cosmos wrong once again."
-  TT_TERRAFORM_PHYS: "Biogenesis"
-  TT_TERRAFORM_PHYS_DESC: "The celestial properties of [From.GetName] make it improbable for it to ever support life on its own, let alone sustain a colony. It will take untold amounts of teraflops to compute the maths, but our physicists believe we might just be able to alter the very nature of this world and make terraforming possible."
-  TT_TERRAFORM_ENG: "Biogenesis"
-  TT_TERRAFORM_ENG_DESC: "The hostile, unique environment of [From.GetName] prevents us from using the usual tools we need to terraform this world. Some engineers have come forward with potential solutions to this problem and and have already begun developing the specialized materials and novel alloys required to implement them."
+﻿l_english:
+ tt_tech_biogenesis: "Biogenesis"
+ tt_tech_biogenesis_desc: "Our mastery over complex ecosystems has advanced to a point, where we could consider transforming even the most hostile planets into habitable worlds. Further research will be necessary on a case by case basis, with each project requiring its own set of specialized procedures, novel materials and custom solutions."
+ TECH_UNLOCK_TERRAFORMING_BIOGENESIS_TITLE: "§HUnlocks Decision:§! Fund Biogenesis Research"
+ TECH_UNLOCK_TERRAFORMING_BIOGENESIS_DESC: "§HBiogenesis§!\nAllows us to terraform lifeless worlds."
+ 
+ tt_decision_terraform: "Fund Biogenesis Research"
+ tt_decision_terraform_desc: "A research project is funded to determine the best approach to terraforming this planet into a world capable of hosting life."
+ tt_decision_terraform_effects_short: "Unlocks a §YSpecial Project§! that will add a §YTerraforming Candidate§! modifier to the planet"
+ TT_DECISION_TERRAFORM_TOOLTIP: "Unlocks a §YSpecial Project§! that will add a §YTerraforming Candidate§! modifier to the planet"
+ TT_REQUIRES_NO_DYSON_SPHERE: "$TRIGGER_FAIL$Cannot be used in a system with a Dyson Sphere."
+ 
+ tt_terraforming_project: "Biogenesis Project"
+ tt_terraforming_project_desc: "This lifeless world is currently being investigated as a potential terraforming candidate."
+ 
+ TT_TERRAFORM_SOC: "Biogenesis"
+ TT_TERRAFORM_SOC_DESC: "While seeding life on a barren world always poses a considerable challenge, [From.GetName] seems especially unfit for biogenesis, making permanent habitation a quixotic pipe dream. The biologists we hired are already brainstorming ideas how to make it work anyway, eager to prove the cosmos wrong once again."
+ TT_TERRAFORM_PHYS: "Biogenesis"
+ TT_TERRAFORM_PHYS_DESC: "The celestial properties of [From.GetName] make it improbable for it to ever support life on its own, let alone sustain a colony. It will take untold amounts of teraflops to compute the maths, but our physicists believe we might just be able to alter the very nature of this world and make terraforming possible."
+ TT_TERRAFORM_ENG: "Biogenesis"
+ TT_TERRAFORM_ENG_DESC: "The hostile, unique environment of [From.GetName] prevents us from using the usual tools we need to terraform this world. Some engineers have come forward with potential solutions to this problem and and have already begun developing the specialized materials and novel alloys required to implement them."
