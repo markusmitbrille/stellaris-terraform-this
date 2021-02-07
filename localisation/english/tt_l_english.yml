@@ -1,7 +1,7 @@
 l_english:
   tt_tech_biogenesis: "Biogenesis"
   tt_tech_biogenesis_desc: "Our mastery over complex ecosystems has advanced to a point, where we could consider transforming even the most hostile planets into habitable worlds. Further research will be necessary on a case by case basis, with each project requiring its own set of specialized procedures, novel materials and custom solutions."
-  TECH_UNLOCK_TERRAFORMING_BIOGENESIS_TITLE: "§HUnlocks Decision:§! Biogenesis"
+  TECH_UNLOCK_TERRAFORMING_BIOGENESIS_TITLE: "§HUnlocks Decision:§! Fund Biogenesis Research"
   TECH_UNLOCK_TERRAFORMING_BIOGENESIS_DESC: "§HBiogenesis§!\nAllows us to terraform lifeless worlds."
   
   tt_decision_terraform: "Fund Biogenesis Research"
