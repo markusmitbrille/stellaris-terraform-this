@@ -40,27 +40,30 @@ tt_decision_terraform = {
 	}
 
 	effect = {
-        add_modifier = { modifier = tt_terraforming_project days = -1 }
-        random_list = {
-            1 = {
-                enable_special_project = {
-                    name = "TT_TERRAFORM_SOC"
-                    location = this
-                    owner = this.owner
+        custom_tooltip = TT_DECISION_TERRAFORM_TOOLTIP
+        hidden_effect = {
+            add_modifier = { modifier = tt_terraforming_project days = -1 }
+            random_list = {
+                1 = {
+                    enable_special_project = {
+                        name = "TT_TERRAFORM_SOC"
+                        location = this
+                        owner = this.owner
+                    }
                 }
-            }
-            1 = {
-                enable_special_project = {
-                    name = "TT_TERRAFORM_PHYS"
-                    location = this
-                    owner = this.owner
+                1 = {
+                    enable_special_project = {
+                        name = "TT_TERRAFORM_PHYS"
+                        location = this
+                        owner = this.owner
+                    }
                 }
-            }
-            1 = {
-                enable_special_project = {
-                    name = "TT_TERRAFORM_ENG"
-                    location = this
-                    owner = this.owner
+                1 = {
+                    enable_special_project = {
+                        name = "TT_TERRAFORM_ENG"
+                        location = this
+                        owner = this.owner
+                    }
                 }
             }
         }
