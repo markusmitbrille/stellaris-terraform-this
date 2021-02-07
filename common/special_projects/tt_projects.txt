@@ -9,11 +9,17 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-		solar_system = {
-            OR = {
-                has_megastructure = dyson_sphere_3
-                has_megastructure = dyson_sphere_4
-                has_megastructure = dyson_sphere_5
+        OR = { 
+            solar_system = { has_megastructure = dyson_sphere_3 } 
+            solar_system = { has_megastructure = dyson_sphere_4 } 
+            solar_system = { has_megastructure = dyson_sphere_5 }
+
+            has_modifier = terraforming_candidate
+            NOT = { has_modifier = tt_terraforming_project }
+
+            NOR = {
+                is_planet_class = pc_barren
+                is_planet_class = pc_barren_cold
             }
         }
     }
@@ -41,11 +47,17 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-		solar_system = {
-            OR = {
-                has_megastructure = dyson_sphere_3
-                has_megastructure = dyson_sphere_4
-                has_megastructure = dyson_sphere_5
+        OR = { 
+            solar_system = { has_megastructure = dyson_sphere_3 } 
+            solar_system = { has_megastructure = dyson_sphere_4 } 
+            solar_system = { has_megastructure = dyson_sphere_5 }
+
+            has_modifier = terraforming_candidate
+            NOT = { has_modifier = tt_terraforming_project }
+
+            NOR = {
+                is_planet_class = pc_barren
+                is_planet_class = pc_barren_cold
             }
         }
     }
@@ -73,11 +85,17 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-		solar_system = {
-            OR = {
-                has_megastructure = dyson_sphere_3
-                has_megastructure = dyson_sphere_4
-                has_megastructure = dyson_sphere_5
+        OR = { 
+            solar_system = { has_megastructure = dyson_sphere_3 } 
+            solar_system = { has_megastructure = dyson_sphere_4 } 
+            solar_system = { has_megastructure = dyson_sphere_5 }
+
+            has_modifier = terraforming_candidate
+            NOT = { has_modifier = tt_terraforming_project }
+
+            NOR = {
+                is_planet_class = pc_barren
+                is_planet_class = pc_barren_cold
             }
         }
     }
