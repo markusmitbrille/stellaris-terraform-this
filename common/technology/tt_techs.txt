@@ -1,0 +1,42 @@
+# Biogenesis
+tt_tech_biogenesis = {
+	cost = @tier5cost1
+	area = society
+	tier = 5
+	category = { new_worlds }
+	prerequisites = { "tech_climate_restoration" }
+	weight = @tier5weight1
+
+	# unlocks action to add terraforming-candidate modifiers
+
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_TERRAFORMING_BIOGENESIS_TITLE"
+			desc = "TECH_UNLOCK_TERRAFORMING_BIOGENESIS_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_expansion_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}

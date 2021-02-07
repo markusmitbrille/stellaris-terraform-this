@@ -1,0 +1,72 @@
+# Fund Terraforming Research
+tt_decision_terraform = {
+	owned_planets_only = no
+	sound = event_laboratory_sound
+	icon = decision_engineering_research
+
+	prerequisites = {
+		"tt_tech_biogenesis"
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 5000
+		}
+	}
+
+	potential = {
+        is_colony = no
+		owner = { is_regular_empire = yes }
+		NOT = { has_modifier = terraforming_candidate }
+		NOT = { has_modifier = tt_terraforming_project }
+        OR = {
+            is_planet_class = pc_barren
+            is_planet_class = pc_barren_cold
+        }
+	}
+
+	allow = {
+		planet_size >= 10
+        planet_size <= 25
+        custom_tooltip = {
+            fail_text = "TT_REQUIRES_NO_DYSON_SPHERE"
+            NOR = {
+                has_megastructure = dyson_sphere_3
+                has_megastructure = dyson_sphere_4
+                has_megastructure = dyson_sphere_5
+            }
+        }
+	}
+
+	effect = {
+        add_modifier = { modifier = tt_terraforming_project days = -1 }
+        random_list = {
+            1 = {
+                enable_special_project = {
+                    name = "TT_TERRAFORM_SOC"
+                    location = this
+                    owner = this.owner
+                }
+            }
+            1 = {
+                enable_special_project = {
+                    name = "TT_TERRAFORM_PHYS"
+                    location = this
+                    owner = this.owner
+                }
+            }
+            1 = {
+                enable_special_project = {
+                    name = "TT_TERRAFORM_ENG"
+                    location = this
+                    owner = this.owner
+                }
+            }
+        }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
