@@ -9,19 +9,7 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-        OR = { 
-            solar_system = { has_megastructure = dyson_sphere_3 } 
-            solar_system = { has_megastructure = dyson_sphere_4 } 
-            solar_system = { has_megastructure = dyson_sphere_5 }
-
-            has_modifier = terraforming_candidate
-            NOT = { has_modifier = tt_terraforming_project }
-
-            NOR = {
-                is_planet_class = pc_barren
-                is_planet_class = pc_barren_cold
-            }
-        }
+        tt_abort_terraform = yes
     }
 
 	on_success = {
@@ -47,19 +35,7 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-        OR = { 
-            solar_system = { has_megastructure = dyson_sphere_3 } 
-            solar_system = { has_megastructure = dyson_sphere_4 } 
-            solar_system = { has_megastructure = dyson_sphere_5 }
-
-            has_modifier = terraforming_candidate
-            NOT = { has_modifier = tt_terraforming_project }
-
-            NOR = {
-                is_planet_class = pc_barren
-                is_planet_class = pc_barren_cold
-            }
-        }
+        tt_abort_terraform = yes
     }
 
 	on_success = {
@@ -85,19 +61,7 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-        OR = { 
-            solar_system = { has_megastructure = dyson_sphere_3 } 
-            solar_system = { has_megastructure = dyson_sphere_4 } 
-            solar_system = { has_megastructure = dyson_sphere_5 }
-
-            has_modifier = terraforming_candidate
-            NOT = { has_modifier = tt_terraforming_project }
-
-            NOR = {
-                is_planet_class = pc_barren
-                is_planet_class = pc_barren_cold
-            }
-        }
+        tt_abort_terraform = yes
     }
 
 	on_success = {

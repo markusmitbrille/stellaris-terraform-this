@@ -1,0 +1,29 @@
+tt_abort_terraform = {
+    OR = {
+        FROM = {
+            # no dyson sphere
+            solar_system = { has_megastructure = dyson_sphere_3 } 
+            solar_system = { has_megastructure = dyson_sphere_4 } 
+            solar_system = { has_megastructure = dyson_sphere_5 }
+
+            # terraforming candidate modifier makes project obsolete
+            has_modifier = terraforming_candidate
+
+            # abort in case project modifier somehow disappears
+            NOT = { has_modifier = tt_terraforming_project }
+
+            # planet needs to remain correct class
+            NOT = { tt_pc_uses_modifier = yes }
+        }
+
+        # needs to remain within empire space
+        NOT = { is_same_value = from.solar_system.space_owner }
+    }
+}
+
+tt_pc_uses_modifier = {
+    OR = {
+        is_planet_class = pc_barren
+        is_planet_class = pc_barren_cold
+    }
+}

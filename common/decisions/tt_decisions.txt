@@ -12,19 +12,23 @@ tt_decision_terraform = {
 	resources = {
 		category = decisions
 		cost = {
-			energy = 7500
+			energy = 10000
 		}
 	}
 
 	potential = {
+        # not colonized
         is_colony = no
         is_under_colonization = no
+
+        # not already with modifier
 		NOT = { has_modifier = terraforming_candidate }
+
+        # not part of existing project
 		NOT = { has_modifier = tt_terraforming_project }
-        OR = {
-            is_planet_class = pc_barren
-            is_planet_class = pc_barren_cold
-        }
+        
+        # correct planet class
+        tt_pc_uses_modifier = yes
 	}
 
 	allow = {
@@ -51,21 +55,21 @@ tt_decision_terraform = {
                     enable_special_project = {
                         name = "TT_TERRAFORM_SOC"
                         location = this
-                        owner = this.owner
+                        owner = from
                     }
                 }
                 1 = {
                     enable_special_project = {
                         name = "TT_TERRAFORM_PHYS"
                         location = this
-                        owner = this.owner
+                        owner = from
                     }
                 }
                 1 = {
                     enable_special_project = {
                         name = "TT_TERRAFORM_ENG"
                         location = this
-                        owner = this.owner
+                        owner = from
                     }
                 }
             }
