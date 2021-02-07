@@ -1,11 +1,11 @@
 # Biogenesis
 tt_tech_biogenesis = {
-	cost = @tier5cost1
+	cost = @tier4cost3
 	area = society
-	tier = 5
+	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_climate_restoration" }
-	weight = @tier5weight1
+	weight = @tier4weight3
 
 	# unlocks action to add terraforming-candidate modifiers
 
