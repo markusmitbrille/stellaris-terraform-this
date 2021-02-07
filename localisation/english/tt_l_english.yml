@@ -8,7 +8,8 @@
  tt_decision_terraform_desc: "A research project is funded to determine the best approach to terraforming this planet into a world capable of hosting life."
  tt_decision_terraform_effects_short: "Unlocks a §YSpecial Project§! that will add a §YTerraforming Candidate§! modifier to the planet"
  TT_DECISION_TERRAFORM_TOOLTIP: "Unlocks a §YSpecial Project§! that will add a §YTerraforming Candidate§! modifier to the planet"
- TT_REQUIRES_NO_DYSON_SPHERE: "$TRIGGER_FAIL$Cannot be used in a system with a Dyson Sphere."
+ TT_REQUIRES_LARGER_PLANET: "$TRIGGER_FAIL$Planet is too small"
+ TT_REQUIRES_NO_DYSON_SPHERE: "$TRIGGER_FAIL$A Dyson Sphere prevents terraforming"
  
  tt_terraforming_project: "Biogenesis Project"
  tt_terraforming_project_desc: "This lifeless world is currently being investigated as a potential terraforming candidate."

@@ -1,6 +1,7 @@
 # Fund Terraforming Research
 tt_decision_terraform = {
 	owned_planets_only = no
+    enactment_time = 0
 	sound = event_laboratory_sound
 	icon = decision_cold_barren_planet
 
@@ -11,13 +12,13 @@ tt_decision_terraform = {
 	resources = {
 		category = decisions
 		cost = {
-			energy = 5000
+			energy = 7500
 		}
 	}
 
 	potential = {
         is_colony = no
-		owner = { is_regular_empire = yes }
+        is_under_colonization = no
 		NOT = { has_modifier = terraforming_candidate }
 		NOT = { has_modifier = tt_terraforming_project }
         OR = {
@@ -27,8 +28,10 @@ tt_decision_terraform = {
 	}
 
 	allow = {
-		planet_size >= 10
-        planet_size <= 25
+        custom_tooltip = {
+            fail_text = "TT_REQUIRES_LARGER_PLANET"
+            planet_size >= 10
+        }
         custom_tooltip = {
             fail_text = "TT_REQUIRES_NO_DYSON_SPHERE"
             NOR = {

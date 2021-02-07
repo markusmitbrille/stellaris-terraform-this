@@ -9,13 +9,6 @@ tt_tech_biogenesis = {
 
 	# unlocks action to add terraforming-candidate modifiers
 
-	prereqfor_desc = {
-		diplo_action = {
-			title = "TECH_UNLOCK_TERRAFORMING_BIOGENESIS_TITLE"
-			desc = "TECH_UNLOCK_TERRAFORMING_BIOGENESIS_DESC"
-		}
-	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
