@@ -2,7 +2,7 @@
 tt_decision_terraform = {
 	owned_planets_only = no
 	sound = event_laboratory_sound
-	icon = decision_engineering_research
+	icon = decision_cold_barren_planet
 
 	prerequisites = {
 		"tt_tech_biogenesis"
