@@ -9,10 +9,12 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-        OR = {
-            has_megastructure = dyson_sphere_3
-            has_megastructure = dyson_sphere_4
-            has_megastructure = dyson_sphere_5
+		solar_system = {
+            OR = {
+                has_megastructure = dyson_sphere_3
+                has_megastructure = dyson_sphere_4
+                has_megastructure = dyson_sphere_5
+            }
         }
     }
 
@@ -39,10 +41,12 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-        OR = {
-            has_megastructure = dyson_sphere_3
-            has_megastructure = dyson_sphere_4
-            has_megastructure = dyson_sphere_5
+		solar_system = {
+            OR = {
+                has_megastructure = dyson_sphere_3
+                has_megastructure = dyson_sphere_4
+                has_megastructure = dyson_sphere_5
+            }
         }
     }
 
@@ -69,10 +73,12 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-        OR = {
-            has_megastructure = dyson_sphere_3
-            has_megastructure = dyson_sphere_4
-            has_megastructure = dyson_sphere_5
+		solar_system = {
+            OR = {
+                has_megastructure = dyson_sphere_3
+                has_megastructure = dyson_sphere_4
+                has_megastructure = dyson_sphere_5
+            }
         }
     }
 
