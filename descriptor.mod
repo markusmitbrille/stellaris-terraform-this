@@ -8,7 +8,7 @@ tags={
 	"Candidate"
 	"Terraform Candidate"
 }
-name="Terraform This"
+name="Terraform This: Biogenesis"
 picture="thumbnail.png"
 supported_version="2.8.*"
 path="C:/Users/makak/Documents/Paradox Interactive/Stellaris/mod/stellaris-terraform-this"
