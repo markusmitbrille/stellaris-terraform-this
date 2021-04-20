@@ -11,4 +11,5 @@ tags={
 name="Terraform This: Biogenesis"
 picture="thumbnail.png"
 supported_version="3.0.*"
-path="mod/stellaris-terraform-this"
+path="C:/Users/makak/Documents/Paradox Interactive/Stellaris/mod/stellaris-terraform-this"
+remote_file_id="2462903570"
