@@ -10,6 +10,6 @@ tags={
 }
 name="Terraform This: Biogenesis"
 picture="thumbnail.png"
-supported_version="3.1.*"
+supported_version="3.2.*"
 path="mod/stellaris-terraform-this"
 remote_file_id="2462903570"
