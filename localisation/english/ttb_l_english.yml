@@ -1,0 +1,22 @@
+﻿l_english:
+ ttb_tech_biogenesis: "Biogenesis"
+ ttb_tech_biogenesis_desc: "Our mastery of complex ecosystems has advanced to a point where we could consider transforming even the most hostile planets into habitable worlds. Further research will be necessary on a case-by-case basis, with each project requiring its own set of specialized procedures, novel materials, and custom solutions."
+ TECH_UNLOCK_TERRAFORMING_BIOGENESIS_TITLE: "§HUnlocks Decision:§! Fund Biogenesis Research"
+ TECH_UNLOCK_TERRAFORMING_BIOGENESIS_DESC: "§HBiogenesis§!\nAllows us to terraform lifeless worlds."
+ 
+ ttb_decision_terraform: "Fund Biogenesis Research"
+ ttb_decision_terraform_desc: "A research project is funded to determine the best approach to terraforming this planet into a world capable of hosting life."
+ ttb_decision_terraform_effects_short: "Unlocks a §YSpecial Project§! that will add a §YTerraforming Candidate§! modifier to the planet"
+ TTB_DECISION_TERRAFORM_TOOLTIP: "Unlocks a §YSpecial Project§! that will add a §YTerraforming Candidate§! modifier to the planet"
+ TTB_REQUIRES_LARGER_PLANET: "$TRIGGER_FAIL$Planet is too small"
+ TTB_REQUIRES_NO_DYSON_SPHERE: "$TRIGGER_FAIL$A Dyson Sphere prevents terraforming"
+ 
+ ttb_terraforming_project: "Biogenesis Project"
+ ttb_terraforming_project_desc: "This lifeless world is currently being investigated as a potential terraforming candidate."
+ 
+ TTB_TERRAFORM_SOC: "Biogenesis: [Root.GetName]"
+ TTB_TERRAFORM_SOC_DESC: "While seeding life on a barren world always poses a considerable challenge, [Root.GetName] seems especially unfit for biogenesis, making permanent habitation a quixotic pipe dream. The biologists we hired are already brainstorming ideas on how to make it work anyway, eager to prove the cosmos wrong once again."
+ TTB_TERRAFORM_PHYS: "Biogenesis: [Root.GetName]"
+ TTB_TERRAFORM_PHYS_DESC: "The celestial properties of [Root.GetName] have made any plans for habitation hitherto unrealistic, but recently a team of young, eccentric physicists have developed an entirely new subfield of astronomy, dealing with problems just like this one. It will take untold amounts of teraflops to compute the maths, but they believe we might be able to alter the very nature of this world and make terraforming possible."
+ TTB_TERRAFORM_ENG: "Biogenesis: [Root.GetName]"
+ TTB_TERRAFORM_ENG_DESC: "The hostile, unique environment of [Root.GetName] prevents us from using the usual tools we need to terraform this world. Some engineers have come forward with potential solutions to this problem and have already begun developing the specialized materials and novel alloys required to implement them."

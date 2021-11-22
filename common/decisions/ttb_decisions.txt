@@ -1,12 +1,12 @@
 # Fund Terraforming Research
-tt_decision_terraform = {
+ttb_decision_terraform = {
 	owned_planets_only = no
     enactment_time = 0
 	sound = event_laboratory_sound
 	icon = decision_cold_barren_planet
 
 	prerequisites = {
-		"tt_tech_biogenesis"
+		"ttb_tech_biogenesis"
 	}
 
 	resources = {
@@ -25,19 +25,19 @@ tt_decision_terraform = {
 		NOT = { has_modifier = terraforming_candidate }
 
         # not part of existing project
-		NOT = { has_modifier = tt_terraforming_project }
+		NOT = { has_modifier = ttb_terraforming_project }
         
         # correct planet class
-        tt_pc_uses_modifier = yes
+        ttb_pc_uses_modifier = yes
 	}
 
 	allow = {
         custom_tooltip = {
-            fail_text = "TT_REQUIRES_LARGER_PLANET"
+            fail_text = "TTB_REQUIRES_LARGER_PLANET"
             planet_size >= 10
         }
         custom_tooltip = {
-            fail_text = "TT_REQUIRES_NO_DYSON_SPHERE"
+            fail_text = "TTB_REQUIRES_NO_DYSON_SPHERE"
             NOR = {
                 has_megastructure = dyson_sphere_3
                 has_megastructure = dyson_sphere_4
@@ -47,27 +47,27 @@ tt_decision_terraform = {
 	}
 
 	effect = {
-        custom_tooltip = TT_DECISION_TERRAFORM_TOOLTIP
+        custom_tooltip = TTB_DECISION_TERRAFORM_TOOLTIP
         hidden_effect = {
-            add_modifier = { modifier = tt_terraforming_project days = -1 }
+            add_modifier = { modifier = ttb_terraforming_project days = -1 }
             random_list = {
                 1 = {
                     enable_special_project = {
-                        name = "TT_TERRAFORM_SOC"
+                        name = "TTB_TERRAFORM_SOC"
                         location = this
                         owner = from
                     }
                 }
                 1 = {
                     enable_special_project = {
-                        name = "TT_TERRAFORM_PHYS"
+                        name = "TTB_TERRAFORM_PHYS"
                         location = this
                         owner = from
                     }
                 }
                 1 = {
                     enable_special_project = {
-                        name = "TT_TERRAFORM_ENG"
+                        name = "TTB_TERRAFORM_ENG"
                         location = this
                         owner = from
                     }

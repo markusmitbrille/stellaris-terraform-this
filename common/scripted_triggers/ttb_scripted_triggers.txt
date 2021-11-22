@@ -1,4 +1,4 @@
-tt_abort_terraform = {
+ttb_abort_terraform = {
     OR = {
         FROM = {
             # no dyson sphere
@@ -10,10 +10,10 @@ tt_abort_terraform = {
             has_modifier = terraforming_candidate
 
             # abort in case project modifier somehow disappears
-            NOT = { has_modifier = tt_terraforming_project }
+            NOT = { has_modifier = ttb_terraforming_project }
 
             # planet needs to remain correct class
-            NOT = { tt_pc_uses_modifier = yes }
+            NOT = { ttb_pc_uses_modifier = yes }
         }
 
         # needs to remain within empire space
@@ -21,7 +21,7 @@ tt_abort_terraform = {
     }
 }
 
-tt_pc_uses_modifier = {
+ttb_pc_uses_modifier = {
     OR = {
         is_planet_class = pc_barren
         is_planet_class = pc_barren_cold

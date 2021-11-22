@@ -1,5 +1,5 @@
 # Biogenesis
-tt_tech_biogenesis = {
+ttb_tech_biogenesis = {
 	cost = @tier4cost3
 	area = society
 	tier = 4

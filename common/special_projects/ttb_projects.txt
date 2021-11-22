@@ -1,5 +1,5 @@
 special_project = {
-	key = "TT_TERRAFORM_SOC"
+	key = "TTB_TERRAFORM_SOC"
 	timelimit = -1
 	cost = @tier4cost1
 	tech_department = society_technology
@@ -9,23 +9,23 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-        tt_abort_terraform = yes
+        ttb_abort_terraform = yes
     }
 
 	on_success = {
-        remove_modifier = tt_terraforming_project
+        remove_modifier = ttb_terraforming_project
         add_modifier = { modifier = terraforming_candidate days = -1 }
     }
     on_cancel = {
-        remove_modifier = tt_terraforming_project
+        remove_modifier = ttb_terraforming_project
     }
     on_fail = {
-        remove_modifier = tt_terraforming_project
+        remove_modifier = ttb_terraforming_project
     }    
 }
 
 special_project = {
-	key = "TT_TERRAFORM_PHYS"
+	key = "TTB_TERRAFORM_PHYS"
 	timelimit = -1
 	cost = @tier4cost1
 	tech_department = physics_technology
@@ -35,23 +35,23 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-        tt_abort_terraform = yes
+        ttb_abort_terraform = yes
     }
 
 	on_success = {
-        remove_modifier = tt_terraforming_project
+        remove_modifier = ttb_terraforming_project
         add_modifier = { modifier = terraforming_candidate days = -1 }
     }
     on_cancel = {
-        remove_modifier = tt_terraforming_project
+        remove_modifier = ttb_terraforming_project
     }
     on_fail = {
-        remove_modifier = tt_terraforming_project
+        remove_modifier = ttb_terraforming_project
     }    
 }
 
 special_project = {
-	key = "TT_TERRAFORM_ENG"
+	key = "TTB_TERRAFORM_ENG"
 	timelimit = -1
 	cost = @tier4cost1
 	tech_department = engineering_technology
@@ -61,17 +61,17 @@ special_project = {
 	event_scope = planet_event
 	
     abort_trigger = {
-        tt_abort_terraform = yes
+        ttb_abort_terraform = yes
     }
 
 	on_success = {
-        remove_modifier = tt_terraforming_project
+        remove_modifier = ttb_terraforming_project
         add_modifier = { modifier = terraforming_candidate days = -1 }
     }
     on_cancel = {
-        remove_modifier = tt_terraforming_project
+        remove_modifier = ttb_terraforming_project
     }
     on_fail = {
-        remove_modifier = tt_terraforming_project
+        remove_modifier = ttb_terraforming_project
     }    
 }
