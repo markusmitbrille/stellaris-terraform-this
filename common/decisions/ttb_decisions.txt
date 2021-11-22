@@ -1,82 +1,152 @@
-# Fund Terraforming Research
+@ttb_min_size = 10
+@ttb_cost_biogenesis = 10000
+@ttb_cost_terragenesis = 25000
+
+# Fund Biogenesis Research
 ttb_decision_terraform = {
-	owned_planets_only = no
-    enactment_time = 0
-	sound = event_laboratory_sound
-	icon = decision_cold_barren_planet
+  owned_planets_only = no
+  enactment_time = 0
+  sound = event_laboratory_sound
+  icon = decision_cold_barren_planet
 
-	prerequisites = {
-		"ttb_tech_biogenesis"
-	}
+  prerequisites = {
+    "ttb_tech_biogenesis"
+  }
 
-	resources = {
-		category = decisions
-		cost = {
-			energy = 10000
+  resources = {
+    category = decisions
+    cost = {
+      energy = @ttb_cost_biogenesis
+    }
+  }
+
+  potential = {
+    # not colonized
+    is_colony = no
+    is_under_colonization = no
+
+    # not already with modifier
+    NOT = { has_modifier = terraforming_candidate }
+
+    # not part of existing project
+    NOT = { has_modifier = ttb_terraforming_project }
+
+    # correct planet class
+    ttb_pc_valid_planet_biogenesis = yes
+  }
+
+  allow = {
+    custom_tooltip = {
+      fail_text = "TTB_REQUIRES_LARGER_PLANET"
+      planet_size >= @ttb_min_size
+    }
+    custom_tooltip = {
+      fail_text = "TTB_REQUIRES_NO_DYSON_SPHERE"
+      NOR = {
+        has_megastructure = dyson_sphere_3
+        has_megastructure = dyson_sphere_4
+        has_megastructure = dyson_sphere_5
+      }
+    }
+  }
+
+  effect = {
+    custom_tooltip = TTB_DECISION_TERRAFORM_TOOLTIP
+    hidden_effect = {
+      add_modifier = { modifier = ttb_terraforming_project days = -1 }
+      ttb_start_project = { key = TTB_TERRAFORM_BARREN }
+    }
+  }
+
+  ai_weight = {
+		weight = 10
+
+		modifier = {
+			factor = 0
+			owner = {
+        count_owned_planet = {
+          count = 0
+          solar_system = { is_same_value = prevprevprev.solar_system }
+        }
+      }
 		}
-	}
+  }
+}
 
-	potential = {
-        # not colonized
-        is_colony = no
-        is_under_colonization = no
+# Fund Terragenesis Research
+ttb_decision_terraform_adv = {
+  owned_planets_only = no
+  enactment_time = 0
+  sound = event_laboratory_sound
+  icon = decision_cold_barren_planet
 
-        # not already with modifier
-		NOT = { has_modifier = terraforming_candidate }
+  prerequisites = {
+    "ttb_tech_terragenesis"
+  }
 
-        # not part of existing project
-		NOT = { has_modifier = ttb_terraforming_project }
-        
-        # correct planet class
-        ttb_pc_uses_modifier = yes
-	}
+  resources = {
+    category = decisions
+    cost = {
+      energy = @ttb_cost_terragenesis
+    }
+  }
 
-	allow = {
-        custom_tooltip = {
-            fail_text = "TTB_REQUIRES_LARGER_PLANET"
-            planet_size >= 10
+  potential = {
+    # not colonized
+    is_colony = no
+    is_under_colonization = no
+
+    # not already with modifier
+    NOT = { has_modifier = terraforming_candidate }
+
+    # not part of existing project
+    NOT = { has_modifier = ttb_terraforming_project }
+
+    # correct planet class
+    ttb_pc_valid_planet_terragenesis = yes
+  }
+
+  allow = {
+    custom_tooltip = {
+      fail_text = "TTB_REQUIRES_LARGER_PLANET"
+      planet_size >= @ttb_min_size
+    }
+    custom_tooltip = {
+      fail_text = "TTB_REQUIRES_NO_DYSON_SPHERE"
+      NOR = {
+        has_megastructure = dyson_sphere_3
+        has_megastructure = dyson_sphere_4
+        has_megastructure = dyson_sphere_5
+      }
+    }
+  }
+
+  effect = {
+    custom_tooltip = TTB_DECISION_TERRAFORM_ADV_TOOLTIP
+    hidden_effect = {
+      add_modifier = { modifier = ttb_terraforming_project days = -1 }
+      switch = {
+        trigger = is_planet_class
+        pc_broken = { ttb_start_project = { key = TTB_TERRAFORM_BROKEN } }
+        pc_toxic = { ttb_start_project = { key = TTB_TERRAFORM_TOXIC } }
+        pc_gas_giant = { ttb_start_project = { key = TTB_TERRAFORM_GAS_GIANT } }
+        pc_molten = { ttb_start_project = { key = TTB_TERRAFORM_MOLTEN } }
+        pc_frozen = { ttb_start_project = { key = TTB_TERRAFORM_FROZEN } }
+      }
+    }
+  }
+
+  ai_weight = {
+		weight = 5
+
+		modifier = {
+			factor = 0
+			owner = {
+        count_owned_planet = {
+          count = 0
+          solar_system = { is_same_value = prevprevprev.solar_system }
         }
-        custom_tooltip = {
-            fail_text = "TTB_REQUIRES_NO_DYSON_SPHERE"
-            NOR = {
-                has_megastructure = dyson_sphere_3
-                has_megastructure = dyson_sphere_4
-                has_megastructure = dyson_sphere_5
-            }
-        }
-	}
-
-	effect = {
-        custom_tooltip = TTB_DECISION_TERRAFORM_TOOLTIP
-        hidden_effect = {
-            add_modifier = { modifier = ttb_terraforming_project days = -1 }
-            random_list = {
-                1 = {
-                    enable_special_project = {
-                        name = "TTB_TERRAFORM_SOC"
-                        location = this
-                        owner = from
-                    }
-                }
-                1 = {
-                    enable_special_project = {
-                        name = "TTB_TERRAFORM_PHYS"
-                        location = this
-                        owner = from
-                    }
-                }
-                1 = {
-                    enable_special_project = {
-                        name = "TTB_TERRAFORM_ENG"
-                        location = this
-                        owner = from
-                    }
-                }
-            }
-        }
-	}
-
-	ai_weight = {
-		weight = 0
-	}
+      }
+		}
+  }
 }

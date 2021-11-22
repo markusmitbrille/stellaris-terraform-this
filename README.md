@@ -1,4 +1,4 @@
 # Terraform This: Biogenesis
-A simple mod that adds a decision to all uncolonized planets within your border, which starts a special project that adds a Terraforming Candidate modifier on completion. To unlock the decision, you have to research Biogenesis, a new technology after Climate Restoration.
+This Stellaris mod adds a system to terraform barren and eventually even more hostile planets. Researching Biogenesis, a new technology after Climate Restoration, unlocks a decision on barren planets within your borders to fund a special project. Upon its completion, a Terraforming Candidate modifier is added to the planet. A follow-up tech, Terragenesis, similarly allows you to add Terraforming Candidate modifiers to hostile worlds (Toxic, Molten, Frozen, Broken, and Gas Giants), which then can be terraformed to barren planets.
 
-No vanilla files or elements were overwritten, this mod adds only new stuff, so it should be compatible with pretty much everything.
+While this drastically increases the potential habitable planets in the galaxy, the AI will only use this feature in systems that already have a colony. The decisions and new terraform links are also quite costly, making planet-spam difficult. Finally, the special projects require lots of research, bottlenecking the creation of Terraforming Candidates.

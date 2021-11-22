@@ -1,77 +1,154 @@
 special_project = {
-	key = "TTB_TERRAFORM_SOC"
-	timelimit = -1
-	cost = @tier4cost1
-	tech_department = society_technology
-	picture = GFX_evt_society_research
-	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
-	
-	event_scope = planet_event
-	
-    abort_trigger = {
-        ttb_abort_terraform = yes
-    }
+  key = "TTB_TERRAFORM_BARREN"
+  timelimit = -1
+  cost = @tier4cost1
+  tech_department = society_technology
+  picture = GFX_evt_society_research
+  icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
 
-	on_success = {
-        remove_modifier = ttb_terraforming_project
-        add_modifier = { modifier = terraforming_candidate days = -1 }
-    }
-    on_cancel = {
-        remove_modifier = ttb_terraforming_project
-    }
-    on_fail = {
-        remove_modifier = ttb_terraforming_project
-    }    
+  event_scope = planet_event
+
+  abort_trigger = {
+    ttb_abort_terraform = yes
+  }
+
+  on_success = {
+    remove_modifier = ttb_terraforming_project
+    add_modifier = { modifier = terraforming_candidate days = -1 }
+  }
+  on_cancel = {
+    remove_modifier = ttb_terraforming_project
+  }
+  on_fail = {
+    remove_modifier = ttb_terraforming_project
+  }
 }
 
 special_project = {
-	key = "TTB_TERRAFORM_PHYS"
-	timelimit = -1
-	cost = @tier4cost1
-	tech_department = physics_technology
-	picture = GFX_evt_physics_research
-	icon = "gfx/interface/icons/situation_log/situation_log_physics.dds"
-	
-	event_scope = planet_event
-	
-    abort_trigger = {
-        ttb_abort_terraform = yes
-    }
+  key = "TTB_TERRAFORM_BROKEN"
+  timelimit = -1
+  cost = @tier4cost3
+  tech_department = society_technology
+  picture = GFX_evt_society_research
+  icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
 
-	on_success = {
-        remove_modifier = ttb_terraforming_project
-        add_modifier = { modifier = terraforming_candidate days = -1 }
-    }
-    on_cancel = {
-        remove_modifier = ttb_terraforming_project
-    }
-    on_fail = {
-        remove_modifier = ttb_terraforming_project
-    }    
+  event_scope = planet_event
+
+  abort_trigger = {
+    ttb_abort_terraform = yes
+  }
+
+  on_success = {
+    remove_modifier = ttb_terraforming_project
+  }
+  on_cancel = {
+    remove_modifier = ttb_terraforming_project
+  }
+  on_fail = {
+    remove_modifier = ttb_terraforming_project
+  }
 }
 
 special_project = {
-	key = "TTB_TERRAFORM_ENG"
-	timelimit = -1
-	cost = @tier4cost1
-	tech_department = engineering_technology
-	picture = GFX_evt_engineering_research
-	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
-	
-	event_scope = planet_event
-	
-    abort_trigger = {
-        ttb_abort_terraform = yes
-    }
+  key = "TTB_TERRAFORM_TOXIC"
+  timelimit = -1
+  cost = @tier5cost1
+  tech_department = physics_technology
+  picture = GFX_evt_physics_research
+  icon = "gfx/interface/icons/situation_log/situation_log_physics.dds"
 
-	on_success = {
-        remove_modifier = ttb_terraforming_project
-        add_modifier = { modifier = terraforming_candidate days = -1 }
-    }
-    on_cancel = {
-        remove_modifier = ttb_terraforming_project
-    }
-    on_fail = {
-        remove_modifier = ttb_terraforming_project
-    }    
+  event_scope = planet_event
+
+  abort_trigger = {
+    ttb_abort_terraform = yes
+  }
+
+  on_success = {
+    remove_modifier = ttb_terraforming_project
+    add_modifier = { modifier = terraforming_candidate days = -1 }
+  }
+  on_cancel = {
+    remove_modifier = ttb_terraforming_project
+  }
+  on_fail = {
+    remove_modifier = ttb_terraforming_project
+  }
+}
+
+special_project = {
+  key = "TTB_TERRAFORM_GAS_GIANT"
+  timelimit = -1
+  cost = @tier5cost3
+  tech_department = physics_technology
+  picture = GFX_evt_physics_research
+  icon = "gfx/interface/icons/situation_log/situation_log_physics.dds"
+
+  event_scope = planet_event
+
+  abort_trigger = {
+    ttb_abort_terraform = yes
+  }
+
+  on_success = {
+    remove_modifier = ttb_terraforming_project
+    add_modifier = { modifier = terraforming_candidate days = -1 }
+  }
+  on_cancel = {
+    remove_modifier = ttb_terraforming_project
+  }
+  on_fail = {
+    remove_modifier = ttb_terraforming_project
+  }
+}
+
+special_project = {
+  key = "TTB_TERRAFORM_MOLTEN"
+  timelimit = -1
+  cost = @tier5cost2
+  tech_department = engineering_technology
+  picture = GFX_evt_engineering_research
+  icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+
+  event_scope = planet_event
+
+  abort_trigger = {
+    ttb_abort_terraform = yes
+  }
+
+  on_success = {
+    remove_modifier = ttb_terraforming_project
+    add_modifier = { modifier = terraforming_candidate days = -1 }
+  }
+  on_cancel = {
+    remove_modifier = ttb_terraforming_project
+  }
+  on_fail = {
+    remove_modifier = ttb_terraforming_project
+  }
+}
+
+special_project = {
+  key = "TTB_TERRAFORM_FROZEN"
+  timelimit = -1
+  cost = @tier5cost2
+  tech_department = engineering_technology
+  picture = GFX_evt_engineering_research
+  icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
+
+  event_scope = planet_event
+
+  abort_trigger = {
+    ttb_abort_terraform = yes
+  }
+
+  on_success = {
+    remove_modifier = ttb_terraforming_project
+    add_modifier = { modifier = terraforming_candidate days = -1 }
+  }
+  on_cancel = {
+    remove_modifier = ttb_terraforming_project
+  }
+  on_fail = {
+    remove_modifier = ttb_terraforming_project
+  }
 }

@@ -1,0 +1,118 @@
+@cost = 15000
+@duration = 1
+
+terraform_link = {
+	from = "pc_broken"
+	to = "pc_barren"
+
+	energy = @cost
+	duration = @duration
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+	condition = {
+		has_technology = "ttb_tech_terragenesis"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_barren"
+
+	energy = @cost
+	duration = @duration
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+	condition = {
+		has_technology = "ttb_tech_terragenesis"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+terraform_link = {
+	from = "pc_gas_giant"
+	to = "pc_barren"
+
+	energy = @cost
+	duration = @duration
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+	condition = {
+		has_technology = "ttb_tech_terragenesis"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+		from = { set_ring = no }
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_barren"
+
+	energy = @cost
+	duration = @duration
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+	condition = {
+		has_technology = "ttb_tech_terragenesis"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_barren"
+
+	energy = @cost
+	duration = @duration
+
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+	}
+	condition = {
+		has_technology = "ttb_tech_terragenesis"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
