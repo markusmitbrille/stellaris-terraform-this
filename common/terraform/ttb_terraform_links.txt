@@ -2,152 +2,122 @@
 @duration = 7200
 
 terraform_link = {
-	from = "pc_broken"
-	to = "pc_barren"
+    from = "pc_broken"
+    to = "pc_barren"
 
-	duration = @duration
+    duration = @duration
 
-	resources = {
-		category = terraforming
+    resources = {
+        category = terraforming
 
-		cost = {
-			energy = @cost
-		}
-	}
+        cost = {
+            energy = @cost
+        }
+    }
 
-	potential = {
-		from = { has_modifier = terraforming_candidate }
-	}
-	condition = {
-		has_technology = "ttb_tech_terragenesis"
-	}
+    potential = {
+        from = { has_modifier = terraforming_candidate }
+    }
+    condition = {
+        has_technology = "ttb_tech_terragenesis"
+    }
 
-	effect = {
-		from = { remove_modifier = terraforming_candidate }
-	}
+    effect = {
+        from = { remove_modifier = terraforming_candidate }
+    }
 
-	ai_weight = {
-		weight = 3
-	}
+    ai_weight = {
+        weight = 3
+    }
 }
 
 terraform_link = {
-	from = "pc_toxic"
-	to = "pc_barren"
+    from = "pc_toxic"
+    to = "pc_barren"
 
-	duration = @duration
+    duration = @duration
 
-	resources = {
-		category = terraforming
+    resources = {
+        category = terraforming
 
-		cost = {
-			energy = @cost
-		}
-	}
+        cost = {
+            energy = @cost
+        }
+    }
 
-	potential = {
-		from = { has_modifier = terraforming_candidate }
-	}
-	condition = {
-		has_technology = "ttb_tech_terragenesis"
-	}
+    potential = {
+        from = { has_modifier = terraforming_candidate }
+    }
+    condition = {
+        has_technology = "ttb_tech_terragenesis"
+    }
 
-	effect = {
-		from = { remove_modifier = terraforming_candidate }
-	}
+    effect = {
+        from = { remove_modifier = terraforming_candidate }
+    }
 
-	ai_weight = {
-		weight = 3
-	}
+    ai_weight = {
+        weight = 3
+    }
 }
 
 terraform_link = {
-	from = "pc_gas_giant"
-	to = "pc_barren"
+    from = "pc_gas_giant"
+    to = "pc_barren"
 
-	duration = @duration
+    duration = @duration
 
-	resources = {
-		category = terraforming
+    resources = {
+        category = terraforming
 
-		cost = {
-			energy = @cost
-		}
-	}
+        cost = {
+            energy = @cost
+        }
+    }
 
-	potential = {
-		from = { has_modifier = terraforming_candidate }
-	}
-	condition = {
-		has_technology = "ttb_tech_terragenesis"
-	}
+    potential = {
+        from = { has_modifier = terraforming_candidate }
+    }
+    condition = {
+        has_technology = "ttb_tech_terragenesis"
+    }
 
-	effect = {
-		from = { remove_modifier = terraforming_candidate }
-		from = { set_ring = no }
-	}
+    effect = {
+        from = { remove_modifier = terraforming_candidate }
+        from = { set_ring = no }
+    }
 
-	ai_weight = {
-		weight = 3
-	}
+    ai_weight = {
+        weight = 3
+    }
 }
 
 terraform_link = {
-	from = "pc_molten"
-	to = "pc_barren"
+    from = "pc_molten"
+    to = "pc_barren"
 
-	duration = @duration
+    duration = @duration
 
-	resources = {
-		category = terraforming
+    resources = {
+        category = terraforming
 
-		cost = {
-			energy = @cost
-		}
-	}
+        cost = {
+            energy = @cost
+        }
+    }
 
-	potential = {
-		from = { has_modifier = terraforming_candidate }
-	}
-	condition = {
-		has_technology = "ttb_tech_terragenesis"
-	}
+    potential = {
+        from = { has_modifier = terraforming_candidate }
+    }
+    condition = {
+        has_technology = "ttb_tech_terragenesis"
+    }
 
-	effect = {
-		from = { remove_modifier = terraforming_candidate }
-	}
+    effect = {
+        from = { remove_modifier = terraforming_candidate }
+    }
 
-	ai_weight = {
-		weight = 3
-	}
-}
-
-terraform_link = {
-	from = "pc_frozen"
-	to = "pc_barren"
-
-	duration = @duration
-
-	resources = {
-		category = terraforming
-
-		cost = {
-			energy = @cost
-		}
-	}
-
-	potential = {
-		from = { has_modifier = terraforming_candidate }
-	}
-	condition = {
-		has_technology = "ttb_tech_terragenesis"
-	}
-
-	effect = {
-		from = { remove_modifier = terraforming_candidate }
-	}
-
-	ai_weight = {
-		weight = 3
-	}
+    ai_weight = {
+        weight = 3
+    }
 }
