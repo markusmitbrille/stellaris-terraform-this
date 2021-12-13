@@ -1,71 +1,79 @@
 # Biogenesis
 ttb_tech_biogenesis = {
-	cost = @tier4cost3
-	area = society
-	tier = 4
-	category = { new_worlds }
-	prerequisites = { "tech_climate_restoration" }
-	weight = @tier4weight3
+    cost = @tier4cost3
+    area = society
+    tier = 4
+    category = { new_worlds }
+    prerequisites = { "tech_climate_restoration" }
+    weight = @tier4weight3
 
-	# unlocks action to add terraforming-candidate modifiers to barren planets
+    # unlocks action to add terraforming-candidate modifiers to barren planets
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-	}
+    weight_modifier = {
+        modifier = {
+            factor = 0.25
+            NOT = { has_ascension_perk = ap_world_shaper }
+        }
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_expansion_adopt
+        }
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = society
+                has_trait = "leader_trait_expertise_new_worlds"
+            }
+        }
+    }
 
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-	}
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = society
+                has_trait = "leader_trait_expertise_new_worlds"
+            }
+        }
+    }
 }
 
 # Terragenesis
 ttb_tech_terragenesis = {
-	cost = @tier5cost3
-	area = society
-	tier = 5
-	category = { new_worlds }
-	prerequisites = { "ttb_tech_biogenesis" }
-	weight = @tier5weight3
+    cost = @tier5cost3
+    area = society
+    tier = 5
+    category = { new_worlds }
+    prerequisites = { "ttb_tech_biogenesis" }
+    weight = @tier5weight3
 
-	# unlocks action to add terraforming-candidate modifiers to hostile planets
+    # unlocks action to add terraforming-candidate modifiers to hostile planets
 
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_expansion_adopt
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-	}
+    weight_modifier = {
+        modifier = {
+            factor = 0.1
+            NOT = { has_ascension_perk = ap_world_shaper }
+        }
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_expansion_adopt
+        }
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = society
+                has_trait = "leader_trait_expertise_new_worlds"
+            }
+        }
+    }
 
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-	}
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            research_leader = {
+                area = society
+                has_trait = "leader_trait_expertise_new_worlds"
+            }
+        }
+    }
 }
