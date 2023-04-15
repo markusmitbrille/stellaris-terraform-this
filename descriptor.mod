@@ -1,4 +1,4 @@
-version="1.1"
+version="1.2"
 tags={
 	"Balance"
 	"Economy"
@@ -10,6 +10,6 @@ tags={
 }
 name="Terraform This: Biogenesis"
 picture="thumbnail.png"
-supported_version="3.4.*"
+supported_version="3.7.*"
 path="mod/stellaris-terraform-this"
 remote_file_id="2462903570"
