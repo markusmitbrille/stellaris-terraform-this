@@ -146,16 +146,6 @@ ttb_decision_terraform_adv = {
   }
 
   ai_weight = {
-    weight = 5
-
-    modifier = {
-      factor = 0
-      owner = {
-        count_owned_planet = {
-          count = 0
-          solar_system = { is_same_value = prevprevprev.solar_system }
-        }
-      }
-    }
+    weight = 0
   }
 }
