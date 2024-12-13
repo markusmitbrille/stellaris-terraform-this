@@ -106,7 +106,11 @@ ttb_decision_terraform_adv = {
         is_under_colonization = no
 
         # not already with modifier
-        NOT = { has_modifier = terraforming_candidate }
+        NOR = {
+            has_modifier = terraforming_candidate
+            has_modifier = toxic_terraforming_candidate
+            has_modifier = frozen_terraforming_candidate
+        }
 
         # not part of existing project
         NOT = { has_modifier = ttb_terraforming_project }
