@@ -38,3 +38,9 @@
   TTB_TERRAFORM_MOLTEN_DESC: "Artificial acceleration of primordial planets is challenging, but rewarding for our enigmatic engineers."
   TTB_TERRAFORM_FROZEN: "Terragenesis: [Root.GetName]"
   TTB_TERRAFORM_FROZEN_DESC: "A process known as global warming might be a viable solution for adjusting the temperature levels of [Root.GetName]."
+
+  decision_arcology_project: "Expand Arcology"
+  decision_arcology_project_desc: "Erect an additional Arcology to accomodate the expanding populace."
+
+  d_arcology: "Arcology"
+  d_arcology_desc: "Additional Arcology to accomodate the ever expanding populace of the city world."

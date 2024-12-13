@@ -157,3 +157,41 @@ ttb_decision_terraform_adv = {
         weight = 0
     }
 }
+
+# construct arcology
+decision_arcology_project = {
+    owned_planets_only = yes
+    icon = decision_arcology_project
+
+    enactment_time = 360
+    resources = {
+        category = decisions
+        cost = {
+            influence = 20
+            minerals = 2000
+        }
+    }
+
+    potential = {
+        is_planet_class = pc_city
+        exists = owner
+        owner = { has_ascension_perk = ap_arcology_project }
+    }
+
+    effect = {
+        add_deposit = d_arcology
+    }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 100
+            exists = owner
+            free_district_slots < 1
+            OR = {
+                num_unemployed > 0
+                free_housing < 1
+            }
+        }
+    }
+}
