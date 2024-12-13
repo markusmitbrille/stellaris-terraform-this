@@ -1,46 +1,46 @@
 ttb_abort_terraform = {
-  OR = {
-    FROM = {
-      # no dyson sphere
-      solar_system = { has_megastructure = dyson_sphere_3 }
-      solar_system = { has_megastructure = dyson_sphere_4 }
-      solar_system = { has_megastructure = dyson_sphere_5 }
+    OR = {
+        FROM = {
+            # no dyson sphere
+            solar_system = { has_megastructure = dyson_sphere_3 }
+            solar_system = { has_megastructure = dyson_sphere_4 }
+            solar_system = { has_megastructure = dyson_sphere_5 }
 
-      # terraforming candidate modifier makes project obsolete
-      has_modifier = terraforming_candidate
+            # terraforming candidate modifier makes project obsolete
+            has_modifier = terraforming_candidate
 
-      # abort in case project modifier somehow disappears
-      NOT = { has_modifier = ttb_terraforming_project }
+            # abort in case project modifier somehow disappears
+            NOT = { has_modifier = ttb_terraforming_project }
 
-      # planet needs to remain correct class
-      NOT = { ttb_pc_valid_planet = yes }
+            # planet needs to remain correct class
+            NOT = { ttb_pc_valid_planet = yes }
+        }
+
+        # needs to remain within empire space
+        NOT = { is_same_value = from.solar_system.space_owner }
     }
-
-    # needs to remain within empire space
-    NOT = { is_same_value = from.solar_system.space_owner }
-  }
 }
 
 ttb_pc_valid_planet = {
-  OR = {
-    ttb_pc_valid_planet_biogenesis = yes
-    ttb_pc_valid_planet_biogenesis = yes
-  }
+    OR = {
+        ttb_pc_valid_planet_biogenesis = yes
+        ttb_pc_valid_planet_biogenesis = yes
+    }
 }
 
 ttb_pc_valid_planet_biogenesis = {
-  OR = {
-    is_planet_class = pc_barren
-    is_planet_class = pc_barren_cold
-  }
+    OR = {
+        is_planet_class = pc_barren
+        is_planet_class = pc_barren_cold
+    }
 }
 
 ttb_pc_valid_planet_terragenesis = {
-  OR = {
-    is_planet_class = pc_broken
-    is_planet_class = pc_toxic
-    is_planet_class = pc_gas_giant
-    is_planet_class = pc_molten
-    is_planet_class = pc_frozen
-  }
+    OR = {
+        is_planet_class = pc_broken
+        is_planet_class = pc_toxic
+        is_planet_class = pc_gas_giant
+        is_planet_class = pc_molten
+        is_planet_class = pc_frozen
+    }
 }

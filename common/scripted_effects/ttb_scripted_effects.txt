@@ -1,7 +1,7 @@
 ttb_start_project = {
-  enable_special_project = {
-      name = $key$
-      location = this
-      owner = from
-  }
+    enable_special_project = {
+        name = $key$
+        location = this
+        owner = from
+    }
 }
